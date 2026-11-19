@@ -26,10 +26,10 @@ Everything listed below was **actually executed**, not just written:
 
 | Component | Status | What Was Executed & Observed | Artifacts / Entrypoints | 
 | ----- | ----- | ----- | ----- | 
-| **Real End-to-End Run** |  | Ran against real Click commit `9f0bcdf` (`Parameter.human_readable_name` renamed to `Parameter.spec`). Correctly flagged the exact real doc sentence in `docs/upgrade-guides.md` describing the deprecation. | `run_real_pipeline.py`  `real_pipeline_report.json`  `example_real_click_diff.diff`  `example_real_click_doc.md` | 
-| **Synthetic Fixtures** |  | Runs **4 synthetic cases** (exact match, fuzzy match, semantic-embedding fallback, and a safe refactor that must **NOT** be flagged) through `matcher.py` → `drift_classifier.py` → `cli.py`. All 4 produce the expected verdict. | `matching/demo_run.py` | 
-| **Parser Unit Tests** |  | **6 synthetic tests** passing + **1 real-data test** (skipped by default unless environment variables are set — see docstring). | `parsing/test_parsers.py` | 
-| **Ground-Truth Auto-Mining** |  | Mines `(code_commit, doc_commit)` pairs from git history via temporal proximity + shared-identifier overlap. Manually checked against `pallets/click`: produced mostly or entirely `FALSE` pairs even after tightening identifier filtering (`ground_truth.json` vs. `ground_truth_v2.json`). | `data/collect_ground_truth.py`  `data/verify_pairs.py` | 
+| **Real End-to-End Run** | verified✅ | Ran against real Click commit `9f0bcdf` (`Parameter.human_readable_name` renamed to `Parameter.spec`). Correctly flagged the exact real doc sentence in `docs/upgrade-guides.md` describing the deprecation. | `run_real_pipeline.py`  `real_pipeline_report.json`  `example_real_click_diff.diff`  `example_real_click_doc.md` | 
+| **Synthetic Fixtures** | verified✅ | Runs **4 synthetic cases** (exact match, fuzzy match, semantic-embedding fallback, and a safe refactor that must **NOT** be flagged) through `matcher.py` → `drift_classifier.py` → `cli.py`. All 4 produce the expected verdict. | `matching/demo_run.py` | 
+| **Parser Unit Tests** | verified✅ | **6 synthetic tests** passing + **1 real-data test** (skipped by default unless environment variables are set — see docstring). | `parsing/test_parsers.py` | 
+| **Ground-Truth Auto-Mining** | verified✅ | Mines `(code_commit, doc_commit)` pairs from git history via temporal proximity + shared-identifier overlap. Manually checked against `pallets/click`: produced mostly or entirely `FALSE` pairs even after tightening identifier filtering (`ground_truth.json` vs. `ground_truth_v2.json`). | `data/collect_ground_truth.py`  `data/verify_pairs.py` | 
 
 > \[!WARNING\]
 > **Known Ground-Truth Caveat:** Do **not** present auto-mined pairs from `collect_ground_truth.py` as verified real drift examples without manually checking each one with `data/verify_pairs.py` first.
@@ -126,9 +126,9 @@ docdrift/
 
 | Member | Role | Roll No. | Branch | 
 | ----- | ----- | ----- | ----- | 
-| **Manraj Singh** | LEAD | `12612031` | `IT` | 
-| **Mayank Prajapati** | MEMBER | `12611069` | `CSE` | 
-| **Ankit Bhichhar** | MEMBER | `12612009` | `IT` | 
+| **Manraj Singh** | Lead | `12612031` | `IT` | 
+| **Mayank Prajapati** | Member | `12611069` | `CSE` | 
+| **Ankit Bhichhar** | Member | `12612009` | `IT` | 
 
 
 
