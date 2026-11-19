@@ -123,7 +123,10 @@ docdrift/
 
 | Member | Role | Roll No. | Branch | 
 | ----- | ----- | ----- | ----- | 
-| **Manraj Singh** |  | `12612031` | `IT` | 
-| **Mayank Prajapati** |  | `12611069` | `CSE` | 
-| **Ankit Bhichhar** |  | `12612009` | `IT` | 
+| **Manraj Singh** | IT | `12612031` | `IT` | 
+| **Mayank Prajapati** | CSE | `12611069` | `CSE` | 
+| **Ankit Bhichhar** | IT | `12612009` | `IT` | 
+
+
+
 
