@@ -1,4 +1,7 @@
+## Click for the [Release Notes](./docdrift_release_notes.md).
+
 [Philosophy](#-core-philosophy) • [Verified Status](#-whats-verified-vs-unverified) • [Quick Start](#-quick-start) • [Architecture](#-architecture) • [Limitations](#-known-limitations) • [Team](#-team-yin-and-yang)
+
 
 ## ☯ Core Philosophy
 
