@@ -1,3 +1,6 @@
+### Click for the [README](./README.md).
+
+
 # DocDrift Release Notes
 
 ## Overview
